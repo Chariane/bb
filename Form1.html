@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js:6:37"></script>
+    <title>Mon premier formulaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <fieldset class="field">
+            <fieldset>
+                <p>
+                    <strong>A quelle catégorie d'age appartenez-vous ?</strong>
+                </p>
+                <input type="radio" name="age" id="moins de 10ans"><label for="moins de 10ans">Moins de 10ans</label><br>
+                <input type="radio" name="age" id="entre 10ans et 25 ans"><label for="entre 10ans et 25ans">Entre 10ans et 25ans</label><br>
+                <input type="radio" name="age" id="plus de 25ans" value="Plus de 25ans"><label for="Plus de 25ans">Plus de 25ans</label><br>
+            </fieldset>
+            <fieldset>
+                <form action="traitement.php" method="post">
+                    <p><strong>
+            <label for="pays">Dans quel pays résidez-vous ?</label></strong></p>
+                    <select name="pays" id="pays">
+                <optgroup label="Europe">
+                    <option value="France">France</option><br>
+                    <option value="Espagne">Espagne</option><br>
+                    <option value="Italie">Italie</option><br>
+                    <option value="Royaume-Uni">Royaume-Uni</option><br>
+                </optgroup>
+                <optgroup label="Asie">
+                    <option value="Inde">Inde</option><br>
+                    <option value="Chine">Chine</option><br>
+                    <option value="Japon">Japon</option><br>
+                </optgroup>
+                <optgroup label="Afrique">
+                    <option value="Bénin">Bénin</option><br>
+                    <option value="Nigéria">Nigéria</option><br>
+                    <option value="Afrique du Sud">Afrique du Sud</option><br>
+                </optgroup>
+                <optgroup label="Autre">
+                </optgroup>
+              </select><br><br>
+                    <label for="pays">Si autre, veuillez saisir votre pays :</label><br>
+                    <input type="text" name="pays" id="pays">
+                </form>
+            </fieldset>
+            <fieldset>
+                <form action="traitement.php" method="post">
+                    <p><strong><label for="reve">Quel est votre plus grand reve ?</label></strong></p>
+                    <input type="radio" name="reve" id="généreux"><label for="généreux">Aider les pauvres, les personnes en difficultés, se batttre pour rendre joyeux autour de soi</label><br>
+                    <input type="radio" name="reve" id="célèbre"><label for="célèbre">Etre célèbre et marquer son existence quel qu'en soit le prix</label><br>
+                    <input type="radio" name="reve" id="Heureux"><label for="Heureux">Combler sa famille particulièrement sa petite famille et soi-meme</label><br>
+                    <input type="radio" name="reve" id="Spirituel"><label for="Spirituel">Etre au service de Dieu toute sa vie; s'oublier totalement dans les mains de DIEU</label><br>
+                    <input type="radio" name="reve" id="Autre"><label for="Autre">Autre</label><br>
+                </form>
+                <p>
+                    <label for="Autre">Si autre, veuillez préciser :</label><br>
+                    <textarea name="Autre" id="reve" cols="40" rows="4" tabindex="80"></textarea>
+                </p>
+            </fieldset>
+        </fieldset>
+        <p>
+            <input type="submit"> <input type="reset">
+        </p>
+    </div>
+</body>
+
+</html>

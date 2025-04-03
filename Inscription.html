@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscript°</title>
+    <link rel="stylesheet" href="fond.css">
+</head>
+<body style="text-align: center;" class="bod">
+    <div class="container-fluid">
+        <h2 style="color:olivedrab; text-shadow:1px 2px 3px goldenrod;">Veuillez vous inscrire pour votre première connexion</h2><br>
+        <form action="traitement.php" method="post">
+            <p>
+                <input type="text" name="name" id="name" style="text-transform: uppercase" placeholder="NOM" aria-colspan="20" aria-rowspan="2"><br><br>
+                <input type="text" name="surname" id="surname" style="text-transform: capitalize;" placeholder="Prénom"><br><br>
+                <input type="date" name="birth" id="birth" placeholder="jj/mm/aaaa" style="text-align:left"><br><br>
+                <input type="text" name="country" id="country" class="text-transform:capitalize;" placeholder="Pays"><br><br>
+                <input type="email" name="mail" id="mail" placeholder="Adresse e-mail"><br><br>
+                <input type="tel" name="phone" id="phone" placeholder="Contact"><br>
+                <div> 
+                  <input type="password" name="password" id="password" tabindex="5" placeholder="Mot de passe"><id="eye" onclick="changer()" style="height: 15px; width: 15px;">
+                </div>
+                <script>
+                   e=true
+                   function changer(){
+                      document.getElementById("pass").setAttribute("type","text");
+                      document.getElementById("eye").src="C:\Users\hp\image1.png.jpg";
+                      e=false;
+                   }
+                   else{
+                      document.getElementById("pass").setAttribute("type","password");
+                      document.getElementById("eye").src="C:\Users\hp\image2.png";
+                      e=true;
+                   }
+                </script></label>
+                <form action="traitement.php" method="post">
+                    <p>
+                        <select name="genre" id="genre">
+                            <option value="Homme">Homme</option>
+                            <option value="Femme">Femme</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="PW">Programmation web</label><input type="checkbox" name="PW" id="PW">
+                        <label style="text-align: right;" for="SI">Sécurité informatique</label><input type="checkbox" name="SI" id="SI">
+                    </p>
+                    <p>
+                        <label for="AR">Administrateur réseau</label><input type="checkbox" name="AR" id="AR">
+                        <label style="text-align: right;" for="DM">Développement mobile</label><input type="checkbox" name="DM" id="DM">
+                    </p>
+                </form>
+                <input type="submit" style="">
+            </p>
+        </form>
+      </div>
+</body>
+</html>

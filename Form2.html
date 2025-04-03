@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js:6:37"></script>
+    <title>Mon deuxième formulaire</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <fieldset>
+            <form action="traitement.php" method="dialog">
+                <p><strong>Réservation d'un billet pour le vol 147</strong><br><br>
+                    <label for="nom">Saisissez votre nom: </label><br><input type="text" name="nom" id="nom"><br>
+                    <label for="prénom">Saisissez votre prénom:</label><br><input type="text" name="prénom" id="prénom"><br>
+                    <label for="age">Saisissez votre age:</label><br><input type="text" name="age" id="age"><br>
+                    <label for="contact">Saisissez votre contact:</label><br><input type="text" name="contact" id="contact"><br>
+                    <label for="Ad"> Saisissez votre adresse e-mail:</label><br><input type="text" name="Ad" id="Ad"><br>
+                    <label for="MoF">Saisissez votre métier ou filière</label><br><input type="text" name="MoF" id="MoF"><br>
+                </p>
+            </form>
+            <form action="traitement.php" method="dialog">
+                <label for="pays"><strong>Quel est votre pays de destination:</strong></label><br><br>
+                <select name="pays" id="pays">
+                <optgroup label="Afrique">
+                    <option value="Bénin">Bénin</option>
+                    <option value="Nigéria">Nigéria</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Haiti">Haiti</option>
+                    <option value="Afrique du Sud">Afrique du Sud</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option value="France">France</option><br>
+                    <option value="Espagne">Espagne</option><br>
+                    <option value="Italie">Italie</option><br>
+                    <option value="Royaume-Uni">Royaume-Uni</option><br>
+                </optgroup>
+                <optgroup label="Asie">
+                    <option value="Inde">Inde</option><br>
+                    <option value="Chine">Chine</option><br>
+                    <option value="Japon">Japon</option><br>
+                </optgroup>
+                <optgroup label="Autre">
+                </optgroup>
+              </select><br>
+                <label for="pays">Si autre, veuillez saisir votre pays :</label><br>
+                <input type="text" name="pays" id="pays">
+                </select>
+            </form><br>
+            <label for="food"><strong>Cochez les aliments que vous aimeriez manger durant votre voyage:</strong></label><br><br>
+            <input type="checkbox" name="fri" id="fri"><label for="fri">Frites</label><br>
+            <input type="checkbox" name="all" id="all"><label for="all">Alloco</label><br>
+            <input type="checkbox" name="cha" id="cha"><label for="cha">Charwama</label><br>
+            <input type="checkbox" name="piz" id="piz"><label for="piz">Pizza</label><br>
+            <input type="checkbox" name="AN" id="AN"><label for="AN">Autres nourritures</label><br><br>
+            <label for="jugement"><strong>Avez-vous aimé votre voyage ?</strong></label><br><br>
+            <input type="radio" name="jug" id="cool"><label for="cool">Oui, c'était cool,j'ai fait un super voyage</label><br>
+            <input type="radio" name="jug" id="pml"><label for="pml">Oui mais pas totalement</label><br>
+            <input type="radio" name="jug" id="Nn"><label for="Nn">Sans toutefois vous vexez, j'ai pas aimé</label><br><br>
+            <label for="sugg"><strong>Quelle suggestion avez-vous à nous faire ?</strong></label><br><textarea name="sugg" id="sugg" cols="30" rows="3"></textarea><br>
+        </fieldset><br>
+        <label for="notation"><strong>***Comment pensez-vous que je pourrais améliorer mon site ?</strong></label><br><textarea name="notation" id="notation" cols="40" rows="4" tabindex="40"></textarea><br>
+        <input type="submit"> <input type="reset">
+    </div>
+</body>
+
+</html>

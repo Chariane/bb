@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-image:url(image\ entreprise.jpg); background-attachment: fixed; background-repeat: no-repeat; background-size: cover;">
+    <span style="color: red;">
+        <h3>Veuillez vous inscrire pour votre première connexion</h3> 
+    </span>
+    <span style="color: green;">
+<label for="nom">Entrer votre nom</label>  <input type="text" name="nom" id="nom" tabindex="5"></br>
+   </br>
+<label for="prénom">Entrer votre prénom</label>  <input type="text" name="prénom" id="prénom" tabindex="5"></br>
+   </br>
+<label for="période">Entrer votre date de naissance</label>  <input type="periode" name="période" id="période" placeholder="jj/mm/aaaa" tabindex="5"></br>
+   </br>
+<label for="pays"> Entrer votre pays</label>  <input type="text" name="pays" id="pays" tabindex="5" ></br>
+   </br>
+   <div>
+      <label for="password">Entrer votre mot de passe</label>  <input type="password" name="password" id="password" tabindex="5" required><id="eye" onclick="changer()">
+   </div>
+   <script>
+      if (e=true){
+      function changer(){
+         document.getElementById("pass").setAttribute("type","text");
+         document.getElementById("eye").src="C:\Users\hp\image1.png.jpg";
+         e=false;
+      }}
+      else{
+         document.getElementById("pass").setAttribute("type","password");
+         document.getElementById("eye").src="C:\Users\hp\image2.png";
+         e=true;
+      }
+   </script>
+   </span>
+</body>
+
+</html>
